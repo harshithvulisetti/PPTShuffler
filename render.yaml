@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: slide-shuffler
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn PPT_Shuffler:app
+    plan: free
