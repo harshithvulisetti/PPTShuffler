@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Shuffler - Result</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h1 class="text-2xl font-bold mb-6 text-center">Processing Complete</h1>
+        <p class="mb-4">Shuffling order processed successfully.</p>
+        <a href="{{ url_for('download', filename=output_file) }}" class="block w-full bg-green-600 text-white py-2 px-4 rounded-md text-center hover:bg-green-700">Download Shuffled Presentation</a>
+        <a href="{{ url_for('index') }}" class="block mt-4 text-center text-blue-600 hover:underline">Process Another</a>
+    </div>
+</body>
+</html>
