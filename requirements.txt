@@ -1,2 +1,4 @@
 flask
-comtypes
+pandas
+python-pptx
+werkzeug
